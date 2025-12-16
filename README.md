@@ -21,9 +21,34 @@ If bundler is not being used to manage dependencies, install the gem by executin
 gem install ruby-docling --github mmgreiner/ruby-docling
 ```
 
+### Install issues
+
+Sometimes, the python installs cause problems. You can install the python packages manually:
+
+```
+pip3 install docling
+pip3 install opencv-python
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+In ruby, do:
+
+```ruby
+converter = Docling::Converter.new
+result = converter.convert("myfile.docx")
+puts result.document.export_to_markdown
+```
+
+You can also convert an array of files:
+
+```ruby
+converter = Docling::Converter.new
+results = converter.convert(["file.pdf", "file_b.docx"])
+results.each do |result|
+  puts result.document.export_to_markdown
+end
+```
 
 ## Development
 

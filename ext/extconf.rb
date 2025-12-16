@@ -3,9 +3,10 @@
 # Check for Python
 abort 'Python 3 is required but not found in PATH' unless system('python3 --version > /dev/null 2>&1')
 
-`python3 -c "import sys; print('.'.join(map(str, sys.version_info[:3])))"`.strip
+python_version = `python3 -c "import sys; print('.'.join(map(str, sys.version_info[:3])))"`.strip
 
-# abort "Python 3.10 is required (found Python #{python_version})" unless python_version.start_with?("3.10")
+minor_version = python_version.split('.')[1].to_i
+abort "Python 3.10 is required (found Python #{python_version})" unless (10..13).include?(minor_version)
 
 # Check for pip
 abort 'pip3 is required but not found in PATH' unless system('pip3 --version > /dev/null 2>&1')
