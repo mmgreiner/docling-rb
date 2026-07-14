@@ -33,7 +33,14 @@ pip3 install opencv-python
 
 ## Usage
 
-In ruby, do:
+**IMPORTANT**: This uses [pycall](https://github.com/red-data-tools/pycall.rb) to wrap the [docling] python library.
+You have to set `PYTHON` in the environment:
+
+```bash
+export PYTHON=$(which python)
+```
+
+Then in ruby, do:
 
 ```ruby
 require 'docling_rb'
