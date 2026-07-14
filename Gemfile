@@ -12,4 +12,6 @@ gem 'standard', '~> 1.3'
 
 gem 'minitest', '~> 5.26'
 
-gem "dotenv", "~> 3.2", group: :test
+group :development, :test do
+    gem "dotenv", "~> 3.2"
+end

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative 'docling/version'
+require_relative 'docling_rb/version'
 
 # Docling module provides a Ruby wrapper for the Docling Python library.
-module Docling
+module DoclingRb
   require 'pycall/import'
 
   class Converter

@@ -12,7 +12,7 @@ This is a tiny ruby wrapper on [docling].
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add ruby-docling --github mmgreiner/ruby-docling
+bundle add docling-rb --github mmgreiner/ruby-docling
 ```
 
 If bundler is not being used to manage dependencies, install the gem by executing:
