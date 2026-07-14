@@ -1,16 +1,17 @@
 # frozen_string_literal: true
 
-require_relative 'lib/docling/version'
+require_relative 'lib/docling_rb/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'ruby-docling'
-  spec.version = RubyDocling::VERSION
+  spec.name = 'docling-rb'
+  spec.version = DoclingRb::VERSION
   spec.authors = ['mmgreiner']
   spec.email = ['mmgreiner@bluewin.ch']
 
-  spec.summary = 'Wrapper for Docling.'
-  spec.description = 'Simple Wrapper for Docling. "Docling turns messy PDFs, DOCX, and slides into clean, structured data—ready for RAG, GenAI apps, or anything downstream."'
-  spec.homepage = 'https://github.com/mmgreiner/ruby-docling'
+  spec.summary = 'Ruby wrapper for Docling.'
+  spec.description = 'Simple Ruby wrapper for Docling. "Docling turns messy PDFs, DOCX, and slides into clean, structured data—ready for RAG, GenAI apps, or anything downstream."'
+  spec.homepage = 'https://github.com/mmgreiner/docling-rb'
+  spec.license = "MIT"
   spec.required_ruby_version = '>= 3.2.0'
 
   spec.metadata['allowed_push_host'] = "TODO: Set to your gem server 'https://example.com'"

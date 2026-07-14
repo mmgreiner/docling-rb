@@ -35,6 +35,7 @@ pip3 install opencv-python
 In ruby, do:
 
 ```ruby
+require 'docling_rb'
 converter = Docling::Converter.new
 result = converter.convert("myfile.docx")
 puts result.document.export_to_markdown
