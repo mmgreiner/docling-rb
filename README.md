@@ -36,7 +36,7 @@ In ruby, do:
 
 ```ruby
 require 'docling_rb'
-converter = Docling::Converter.new
+converter = DoclingRb::Converter.new
 result = converter.convert("myfile.docx")
 puts result.document.export_to_markdown
 ```

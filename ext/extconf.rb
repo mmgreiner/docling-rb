@@ -16,6 +16,8 @@ abort 'pip3 is required but not found in PATH' unless system('pip3 --version > /
   abort "Failed to install Python dependency #{package}" unless system("pip3 install #{package}")
 end
 
+# Verify installations
+system('python3 -c "import docling; print(docling.__file__)"')
 # Create dummy Makefile (required by RubyGems)
 File.open('Makefile', 'w') do |f|
   f.puts "install:\n\t@echo 'Python dependencies installed'"

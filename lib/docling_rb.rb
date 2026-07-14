@@ -9,6 +9,7 @@ module DoclingRb
   class Converter
     include PyCall::Import
     def initialize
+      abort "need to set PYTHON" unless ENV["PYTHON"]
       # see `python_ruby.md` for details on these settings
       ENV["PYTHONWARNINGS"] = "ignore"
       ENV["OMP_NUM_THREADS"] = "1"
