@@ -12,20 +12,21 @@ This is a tiny ruby wrapper on [docling].
 Install the gem and add to the application's Gemfile by executing:
 
 ```bash
-bundle add docling-rb --github mmgreiner/ruby-docling
+bundle add docling-rb --github mmgreiner/docling-rb
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+If bundler is not being used to manage dependencies, we need [specific_install](https://github.com/rdp/specific_install) to install the gem from github:
 
 ```bash
-gem install ruby-docling --github mmgreiner/ruby-docling
+gem install specific_install
+gem specific_install https://github.com/mmgreiner/docling-rb.git
 ```
 
 ### Install issues
 
 Sometimes, the python installs cause problems. You can install the python packages manually:
 
-```
+```bash
 pip3 install docling
 pip3 install opencv-python
 ```
