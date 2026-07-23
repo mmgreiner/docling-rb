@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'Ruby wrapper for Docling.'
   spec.description = 'Simple Ruby wrapper for Docling. "Docling turns messy PDFs, DOCX, and slides into clean, structured data—ready for RAG, GenAI apps, or anything downstream."'
   spec.homepage = 'https://github.com/mmgreiner/docling-rb'
-  spec.license = "MIT"
+  spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.2.0'
 
   spec.metadata['allowed_push_host'] = "TODO: Set to your gem server 'https://example.com'"
@@ -35,9 +35,9 @@ Gem::Specification.new do |spec|
   spec.extensions << 'ext/extconf.rb'
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "pycall", "~> 1.5"
   spec.add_dependency 'fiddle', '~> 1.1'
-  
+  spec.add_dependency 'pycall', '~> 1.5'
+
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
 end

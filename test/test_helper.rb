@@ -3,4 +3,4 @@
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 require 'minitest/autorun'
 require 'minitest/pride' # Optional: colorful output
-require_relative '../lib/docling'
+require_relative '../lib/docling_rb'
